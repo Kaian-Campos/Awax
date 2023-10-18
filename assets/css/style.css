@@ -9,6 +9,11 @@
 body {
     font-family: 'Montserrat';
 }
+
+
+/* Header */
+
+
 .container {
     display: flex;
     width: 1140px;
@@ -29,6 +34,7 @@ header {
     width: 80px;
     height: 80px;
     background-color: var(--gold);
+    border-radius: 40px;
 }
 .menu {
     display: flex;
@@ -57,4 +63,82 @@ header {
 .menu li a:hover {
     border-bottom: 5px solid var(--gold);
     color: #CCC;
+}
+
+
+/* Banner */
+
+.banner {
+    height: calc(100vh - 100px);
+    background-color: #333;
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-position: bottom;
+    overflow: hidden;
+}
+.banner .sliders {
+    width: 1000vw;
+    height: 100%;
+}
+.banner .slide {
+    width: 100vw;
+    height: 100%;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.banner .slidearea {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+}
+.banner h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 50px;
+    
+}
+.banner h1 span {
+    color: var(--gold);
+}
+.banner h2 {
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+.banner .slidearea a {
+    text-decoration: none;
+}
+.banner button {
+    display: block;
+    background-color: var(--gold);
+    border: none;
+    color: #FFF;
+    padding: 10px 30px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+.banner .sliderpointer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 20px;
+    position: absolute;
+    margin-top: -50px;
+}
+.banner .pointer {
+    width: 15px;
+    height: 15px;
+    border: solid 2px var(--gold);
+    border-radius: 8px;
+    margin: 0px 5px;
+    cursor: pointer;
+}
+.banner .active {
+    background-color: var(--gold);
 }
