@@ -8,6 +8,7 @@
 }
 body {
     font-family: 'Montserrat';
+    overflow-x: hidden;
 }
 
 
@@ -74,14 +75,9 @@ header {
     background-image: url(../images/bg.jpg);
     background-size: cover;
     background-position: bottom;
-    overflow: hidden;
-}
-.banner .sliders {
-    width: 1000vw;
-    height: 100%;
 }
 .banner .slide {
-    width: 100vw;
+    width: 100%;
     height: 100%;
     display: inline-block;
     background-color: rgba(0, 0, 0, 0.8);
@@ -141,4 +137,47 @@ header {
 }
 .banner .active {
     background-color: var(--gold);
+}
+
+
+/* Section */
+
+
+.default .container {
+    flex-direction: column;
+}
+.default {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0 50px 0;
+    
+}
+.sBody {
+    margin: auto;
+    background-color: #AAA;
+}
+.sTitle, .sDesc {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+}
+.sTitle {
+    font-size: 20px;
+}
+.sDesc {
+    font-size: 12px;
+    color: #AAA;
+    margin: 8px 0 40px 0;
+}
+.light {
+    background-color: #f7f7f7;
+}
+.light .sTitle {
+    color: #000;
+}
+.dark {
+    background-color: #000;
+}
+.dark .sTitle {
+    color: #f7f7f7;
 }
