@@ -106,23 +106,28 @@ header {
 .banner .slidearea a {
     text-decoration: none;
 }
-.banner button {
-    display: block;
+button {
+    display: inline-block;
     background-color: var(--gold);
     border: none;
     color: #FFF;
-    padding: 10px 30px;
+    padding: 15px 50px;
     font-size: 12px;
-    font-weight: 600;
+    font-weight: 700;
     text-transform: uppercase;
     margin-top: 30px;
     border-radius: 20px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+button:hover {
+    transform: scale(1.06);
 }
 .banner .sliderpointer {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
+    width: 100%;
     height: 20px;
     position: absolute;
     margin-top: -50px;
@@ -152,32 +157,97 @@ header {
     padding: 50px 0 50px 0;
     
 }
-.sBody {
-    margin: auto;
-    background-color: #AAA;
-}
 .sTitle, .sDesc {
     text-transform: uppercase;
     text-align: center;
     font-weight: 600;
 }
 .sTitle {
-    font-size: 20px;
+    font-size: 30px;
+    font-weight: 700;
 }
 .sDesc {
-    font-size: 12px;
+    font-size: 14px;
     color: #AAA;
     margin: 8px 0 40px 0;
 }
 .light {
     background-color: #f7f7f7;
 }
-.light .sTitle {
+.light .sTitle, .light .sBody {
     color: #000;
 }
 .dark {
     background-color: #000;
 }
-.dark .sTitle {
+.dark .sTitle, .dark .sBody {
     color: #f7f7f7;
+}
+.img:hover {
+    transform: scale(1.04);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Áreas específicas */
+
+.sAboutus {
+    display: flex;
+    justify-content: center;
+}
+.sAboutus-left {
+    flex: 1;
+}
+.sAboutus-left {
+    font-size: 14px;
+    line-height: 25px;
+}
+.sAboutus-right {
+    width: 520px;
+    text-align: center;
+}
+.sAboutus-right img {
+    width:450px;
+    box-shadow: 0px 10px 20px #666;
+    transition: all .3s ease ;
+}
+
+
+.sServices {
+    display: flex;
+}
+.sServices img {
+    width: 60px;
+    height: 60px;
+}
+.sService {
+    flex: 1;
+    text-align: center;
+    border-right: 2px solid #333;
+    padding: 20px;
+}
+.sService:first-child {
+    border-left: 2px solid #333;
+}
+.sService h4 {
+    margin-top: 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 0px 30px;
+}
+.sService p {
+    margin-top: 5px;
+    font-size: 13px;
+    color: #999;
+    line-height: 20px;
 }
