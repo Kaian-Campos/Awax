@@ -251,3 +251,96 @@ button:hover {
     color: #999;
     line-height: 20px;
 }
+
+
+
+
+
+
+
+
+.sProjects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sProjects-filters {
+    border: 1px solid #CCC;
+    background-color: #EEE;
+    border-radius: 25px;
+    display: inline-block;
+    padding: 0px 30px;
+}
+.sProjects-filters ul, li {
+    list-style: none;
+}
+.sProjects-filters li {
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 20px 25px 15px 20px;
+    font-size: 14px;
+    border-right: 1px solid #CCC;
+    border-bottom: 5px solid transparent;
+    cursor: pointer;
+}
+.sProjects-filters li:last-child {
+    border-right: none;
+}
+.sProjects-filters li:hover {
+    border-bottom: 5px solid var(--gold);
+}
+
+
+
+
+
+
+.sProjects-photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100vw;
+    max-width: fit-content;
+    margin-top: 20px;
+    
+}
+.sProjects-photo {
+    width: 280px;
+}
+.sProjects-photoarea {
+    margin: 10px;
+    width: 260px;
+    height: 160px;
+    cursor: pointer;
+}
+.sProjects-photoinfo {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: inherit;
+    height: inherit;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+.sProjects-photoinfo h4 {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 18px;
+    color: #f7f7f7;
+}
+.sProjects-photoinfo p {
+    margin-top: 15px;
+    font-size: 13px;
+    line-height: 20px;
+    color: #DDD;
+}
+.sProjects-photoarea img {
+    width: inherit;
+    height: inherit;
+}
+.sProjects-photoarea:hover .sProjects-photoinfo {
+    display: flex;
+}
