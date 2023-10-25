@@ -111,7 +111,7 @@ button {
     background-color: var(--gold);
     border: none;
     color: #FFF;
-    padding: 15px 50px;
+    padding: 15px 45px;
     font-size: 12px;
     font-weight: 700;
     text-transform: uppercase;
@@ -154,7 +154,7 @@ button:hover {
 .default {
     display: flex;
     justify-content: center;
-    padding: 50px 0 50px 0;
+    padding: 50px 0;
     
 }
 .sTitle, .sDesc {
@@ -182,6 +182,9 @@ button:hover {
 }
 .dark .sTitle, .dark .sBody {
     color: #f7f7f7;
+}
+.img {
+    transition: all .3s ease;
 }
 .img:hover {
     transform: scale(1.04);
@@ -219,7 +222,6 @@ button:hover {
 .sAboutus-right img {
     width:450px;
     box-shadow: 0px 10px 20px #666;
-    transition: all .3s ease ;
 }
 
 
@@ -343,4 +345,87 @@ button:hover {
 }
 .sProjects-photoarea:hover .sProjects-photoinfo {
     display: flex;
+}
+
+
+
+
+
+
+.bgteam {
+    background-image: url("../images/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 0px;
+    display: flex;
+}
+.teamarea {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 50px 0;
+    width: 100vw;
+}
+.sTeam-workers {
+    display: flex;
+    justify-content: center;
+}
+.worker1, .worker2, .worker3 {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF;
+    width: 350px;
+    height: 440px;
+    margin: 0 15px;
+    color: #000;
+}
+.sTeam-workers .workertitle {
+    font-size: 21px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 40px;
+    color: #333;
+}
+.sTeam-workers .workerdesc {
+    color: #333;
+    margin-top: 5px;
+    font-size: 14px;
+}
+.worker-social {
+    display: flex;
+    margin-top: 35px;
+}
+.worker-social a {
+    background-color: #BBB;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 33px;
+    height: 33px;
+    border-radius: 18px;
+    margin: 0 3px;
+    transition: .3 all ease;
+}
+.worker-social a:hover {
+    transform: scale(1.2);
+    background-color: var(--gold);
+}
+.sTeam .sliderpointer {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20px;
+}
+.sTeam .pointer {
+    width: 15px;
+    height: 15px;
+    border: solid 2px var(--gold);
+    border-radius: 8px;
+    margin: 0px 5px;
+    cursor: pointer;
+}
+.sTeam .active {
+    background-color: var(--gold);
 }
