@@ -106,7 +106,7 @@ header {
 .banner .slidearea a {
     text-decoration: none;
 }
-button {
+.button {
     display: inline-block;
     background-color: var(--gold);
     border: none;
@@ -120,7 +120,7 @@ button {
     cursor: pointer;
     transition: all .3s ease;
 }
-button:hover {
+.button:hover {
     transform: scale(1.06);
 }
 .banner .sliderpointer {
@@ -227,6 +227,7 @@ button:hover {
 
 .sServices {
     display: flex;
+    flex-wrap: wrap;
 }
 .sServices img {
     width: 60px;
@@ -367,8 +368,9 @@ button:hover {
 .sTeam-workers {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
-.worker1, .worker2, .worker3 {
+.worker {
     justify-content: center;
     align-items: center;
     display: flex;
@@ -378,6 +380,7 @@ button:hover {
     height: 440px;
     margin: 0 15px;
     color: #000;
+    border-radius: 4px;
 }
 .workertitle {
     font-size: 21px;
@@ -503,4 +506,63 @@ button:hover {
 }
 .mark img {
     object-fit: contain;
+}
+
+
+
+
+
+
+
+
+.sPlans {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.plans {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF;
+    text-align: center;
+    width: 255px;
+    padding: 30px;
+    border-radius: 4px;
+}
+.planstitle {
+    font-weight: 600;
+    font-size: 14px;
+    color: #2f2f2f;
+}
+.plansprice {
+    font-weight: 700;
+    font-size: 30px;
+    margin-top: 10px;
+}
+.plansmonth {
+    font-size: 10px;
+    color: #979797;
+    margin-bottom: 20px;
+}
+.plansdata {
+    font-size: 11px;
+    font-weight: 700px;
+}
+.plans button {
+    display: inline-block;
+    background-color: #373737;
+    border: none;
+    color: #FFF;
+    padding: 15px 40px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 25px 0 5px 0;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.plans button:hover {
+    transform: scale(1.06);
+    background-color: var(--gold);
 }
