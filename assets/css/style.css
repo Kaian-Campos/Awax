@@ -172,7 +172,7 @@ button:hover {
     margin: 8px 0 40px 0;
 }
 .light {
-    background-color: #f7f7f7;
+    background-color: #ededed;
 }
 .light .sTitle, .light .sBody {
     color: #000;
@@ -181,7 +181,7 @@ button:hover {
     background-color: #000;
 }
 .dark .sTitle, .dark .sBody {
-    color: #f7f7f7;
+    color: #ededed;
 }
 .img {
     transition: all .3s ease;
@@ -331,7 +331,7 @@ button:hover {
     text-transform: uppercase;
     font-weight: 600;
     font-size: 18px;
-    color: #f7f7f7;
+    color: #ededed;
 }
 .sProjects-photoinfo p {
     margin-top: 15px;
@@ -479,4 +479,28 @@ button:hover {
 }
 .sClients .active {
     background-color: var(--gold);
+}
+
+
+
+
+
+
+
+
+.marks {
+    display: flex;
+    justify-content: center;
+    background-color: #FFF;
+    border-top: 3px solid #d7d7d7;
+    border-bottom: 3px solid #d7d7d7;
+    padding: 45px 0;
+}
+.mark {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.mark img {
+    object-fit: contain;
 }
