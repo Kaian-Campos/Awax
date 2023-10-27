@@ -640,3 +640,49 @@ header {
     justify-content: center;
     margin-top: 5px;
 }
+
+
+
+
+
+
+
+
+
+.sFacts {
+    display: flex;
+    flex-wrap: wrap;
+}
+.sFact {
+    flex: 1;
+    text-align: center;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sFact h2 {
+    color: var(--gold);
+    font-size: 49px;
+    font-weight: 700;
+
+}
+.sFact h4 {
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 0px 39px;
+    margin-bottom: 10px;
+    height: 50px;
+}
+.sFact p {
+    font-size: 13px;
+    color: #999;
+    line-height: 20px;
+}
+.fact-line {
+    height: 4px;
+    width: 20px;
+    background-color: #7e7e7e;
+    margin: 4px 0 5px;
+    border-radius: 2px;
+}
