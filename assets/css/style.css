@@ -111,7 +111,8 @@ header {
     background-color: var(--gold);
     border: none;
     color: #FFF;
-    padding: 15px 45px;
+    padding: 16px 0;
+    width: 195px;
     font-size: 12px;
     font-weight: 700;
     text-transform: uppercase;
@@ -565,4 +566,77 @@ header {
 .plans button:hover {
     transform: scale(1.06);
     background-color: var(--gold);
+}
+
+
+
+
+
+
+
+
+.whiter {
+    background-color: #FFF;
+    border-top: 2px solid #d7d7d7;
+}
+.sPremium {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 3px solid #eee;
+    padding-bottom: 30px;
+}
+.premium-features {
+    margin-top: 20px;
+}
+.premium-feature {
+    display: flex;
+    margin-bottom: 20px;
+    width:500px ;
+}
+.premium-feature span {
+    font-weight: 700;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #242424;
+    line-height: 30px;
+}
+.premium-feature p {
+    font-size: 14px;
+    line-height: 25px;
+    color: #9e9e9e;
+}
+.premium-check {
+    margin-right: 30px;
+}
+.premium-books {
+    align-self: baseline;
+    margin-right: 70px;
+}
+.premium-desc p:nth-child(3) {
+    margin-top: 5px;
+}
+.sP .sliderpointer {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20px;
+}
+.sP .pointer {
+    width: 15px;
+    height: 15px;
+    border: solid 3px var(--gold);
+    border-radius: 10px;
+    margin: 0px 6px;
+    cursor: pointer;
+}
+.sP .active {
+    background-color: var(--gold);
+}
+.sPbutton {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
 }
