@@ -8,7 +8,6 @@
 }
 body {
     font-family: 'Montserrat';
-    overflow-x: hidden;
 }
 
 
@@ -70,23 +69,25 @@ header {
 /* Banner */
 
 .banner {
-    height: calc(100vh - 100px);
-    background-color: #333;
-    background-image: url(../images/bg.jpg);
+    background-image: url("../images/bg.jpg");
     background-size: cover;
     background-position: bottom;
+    height: calc(100vh - 100px);
 }
-.banner .slide {
+.slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     width: 100%;
     height: 100%;
-    display: inline-block;
     background-color: rgba(0, 0, 0, 0.8);
 }
-.banner .slidearea {
-    height: 100%;
+.slidearea {
     display: flex;
     flex-direction: column;
     align-items: center;
+    align-self: center;
     justify-content: center;
     color: #FFF;
 }
@@ -102,9 +103,6 @@ header {
 .banner h2 {
     text-transform: uppercase;
     margin-top: 20px;
-}
-.banner .slidearea a {
-    text-decoration: none;
 }
 .button {
     display: inline-block;
@@ -127,11 +125,11 @@ header {
 .banner .sliderpointer {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-self: flex-end;
     width: 100%;
     height: 20px;
     position: absolute;
-    margin-top: -50px;
+    bottom: 20px;
 }
 .banner .pointer {
     width: 15px;
@@ -208,6 +206,7 @@ header {
 .sAboutus {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .sAboutus-left {
     flex: 1;
