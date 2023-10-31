@@ -841,21 +841,24 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: clamp(0rem, -1.6296rem + 6.135vw, 3.125rem) 0 clamp(3.125rem, 15.7609rem + -16.3043vw, 12.5rem);
+    padding: clamp(0rem, -1.9075rem + 6.4935vw, 3.125rem) 0 clamp(3.125rem, 15.7609rem + -16.3043vw, 12.5rem);
 }
 .sMap-info {
     background-color: #FFF;
     color: #303030;
     font-size: clamp(0.625rem, 0.5815rem + 0.2174vw, 0.75rem);
     margin-left: clamp(0rem, -0.4889rem + 1.8405vw, 0.9375rem);
-    padding: 45px 0 50px clamp(0rem, -0.4348rem + 2.1739vw, 1.25rem);
-    width: 100%;
+    padding: 45px clamp(0rem, -4.1964rem + 14.2857vw, 6.875rem) clamp(1.5625rem, 1.019rem + 2.7174vw, 3.125rem) clamp(0rem, -0.4348rem + 2.1739vw, 1.25rem);
+    min-width: clamp(20rem, 0rem + 100vw, 29.375rem);
 }
 .sMap-item {
     padding: 7px;
     display: flex;
     align-items: center;
-
+}
+.sMap-item a {
+    text-decoration: none;
+    color: #c48130;
 }
 .sMap-img {
     display: inline-flex;
