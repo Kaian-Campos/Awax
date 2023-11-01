@@ -43,7 +43,7 @@ header {
     justify-content: flex-end;
     flex: 1;
 }
-.menu ul, .menu li {
+.menu :is(ul,li) {
     list-style: none;
 }
 .menu ul {
@@ -187,13 +187,13 @@ header {
 .fa{
     background-color: #fafafa;
 }
-.light .sTitle, .light .sBody {
+.light :is(.sTitle, .sBody ) {
     color: #000;
 }
 .dark {
     background-color: #000;
 }
-.dark .sTitle, .dark .sBody {
+.dark :is(.sTitle, .sBody ) {
     color: #ededed;
 }
 .img {
@@ -737,7 +737,23 @@ header {
     align-items: center;
     flex-wrap: wrap;
 }
-.tell a {
+.tell div {
+    display: flex;
+    align-items: center;
+}
+.tell-legend {
+    margin-bottom: clamp(0rem, 3.9375rem + -10vw, 1.25rem);
+}
+.tell-legend h4 {
+    color: #b9b9b9;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin: 0 clamp(0rem, -1.9907rem + 7.4074vw, 3.75rem) 0 15px;
+}
+.tell-item {
+    margin-right: clamp(1.25rem, -1.4375rem + 10vw, 2.5rem);
+}
+.tell-item a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -745,27 +761,17 @@ header {
     height: 33px;
     border-radius: 18px;
 }
-.tell img {
+.tell-item img {
     object-fit: contain;
 }
-.tell h4 {
-    color: #b9b9b9;
-    text-transform: uppercase;
-    font-size: 14px;
-    margin: 0 60px 0 15px;
+.tell-item:last-child {
+    margin-right: 0;
 }
-.tell p {
+.tell-item p {
     color: #b9b9b9;
     font-size: 10px;
     font-weight: 700;
-    margin: 0 40px 0 5px;
-}
-.tell p:last-child {
-    margin: 0 0 0 5px;
-}
-.tell div {
-    display: flex;
-    align-items: center;
+    margin-left: 5px;
 }
 .telltt {
     background-color: #34c5f0;
@@ -884,6 +890,7 @@ header {
 
 
 @media (max-width:760px) {
+
     .worker:nth-child(1) {
         display: none;
     }
@@ -893,4 +900,44 @@ header {
     .projectsimg {
         display: none;
     }
+}
+@media (max-width:400px) {
+    .tellabout {
+        padding-top: 10px;
+    }
+    .tell {
+        gap: 15px;
+    }
+    .tell-legend {
+        margin: 0;
+    }
+    .tell-legend img {
+        display: none;
+    }
+    .tell-legend h4 {
+        margin: 0 10px;
+        font-size: 11px;
+    }
+    .tell-items {
+        margin: 0 45px;
+        gap: 12px;
+    }
+    .tell-item {
+        flex-direction: column;
+        gap: 5px;
+        margin: 0;
+    }
+    .tell-item p {
+        margin: 0;
+        font-size: 8px;
+    }
+    .tell-item a {
+        height: 27px;
+        width: 27px;
+    }
+    .tell-item img {
+        height: 12px;
+        width: 12px;
+    }
+
 }
