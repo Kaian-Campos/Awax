@@ -430,7 +430,7 @@ header {
     height: 33px;
     border-radius: 18px;
     margin: 0 3px;
-    transition: .3 all ease;
+    transition: .3s all ease;
 }
 .worker-social a:hover {
     transform: scale(1.2);
@@ -881,6 +881,81 @@ header {
     width: clamp(0.9375rem, 0.8071rem + 0.6522vw, 1.3125rem);
     height: clamp(0.9375rem, 0.8071rem + 0.6522vw, 1.3125rem);
 }
+
+
+
+
+
+
+footer {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+}
+.footer {
+    padding: 30px 15px;
+    display: flex;
+    gap: 20px;
+}
+.footer div {
+    flex: 1;
+}
+.fItem-1 a {
+    background-color: #3d3d3d;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 33px;
+    height: 33px;
+    border-radius: 18px;
+    margin: 0 1px;
+    transition: .3s all ease;
+}
+.fItem-1 a:hover {
+    transform: scale(1.2);
+    background-color: var(--gold);
+}
+.fItem-2 {
+    color:#707070;
+    font-size: 13px;
+    line-height: 22px;
+    font-weight: 600;
+}
+.fItem-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #3b3b3b;
+}
+.fItem-3 form{
+    text-align: center;
+    padding: 0 70px;
+}
+.fItem-3 input {
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    border-bottom: 3px solid #b7b7b7;
+    color: #b7b7b7;
+    font-size: 14px;
+    padding: 24px 0 13px;
+    width: 100%;
+}
+.fItem-3 input::placeholder {
+    color: #b7b7b7;
+    font-size: 14px;
+    font-weight: 700;
+    transition: all .5s ease-in-out;
+    text-align: center;
+}
+.fItem-3 input:focus::placeholder{
+    transform: translateY(-24px);
+}
+
+
+
+
 
 
 
