@@ -176,7 +176,7 @@ header {
 .sDesc {
     font-size: clamp(0.6875rem, 0.6223rem + 0.3261vw, 0.875rem);
     color: #AAA;
-    margin: 8px 0 40px 0;
+    margin: 8px 20px 40px;
 }
 .light {
     background-color: #f7f7f7;
@@ -808,13 +808,13 @@ header {
     background-color: #fafafa;
     border: 0;
     outline: 0;
-    border-bottom: 3px solid #b7b7b7;
+    border-bottom: clamp(0.125rem, 0.0139rem + 0.5556vw, 0.1875rem) solid #b7b7b7;
     flex: 1;
-    width: 260px;
-    margin: 15px 15px 4px 15px;
-    padding: 24px 0 13px;
+    min-width: 270px;
+    margin: 15px clamp(0.9375rem, 2.6736rem + -5.5556vw, 1.5625rem) 4px;
+    padding: 24px 0 clamp(0.625rem, 0.2917rem + 1.6667vw, 0.8125rem);
     color: #b7b7b7;
-    font-size: 14px;
+    font-size: clamp(0.6875rem, 0.6223rem + 0.3261vw, 0.875rem);
 }
 .sInput{
     display: flex;
@@ -822,7 +822,7 @@ header {
 }
 .sInput input::placeholder {
     color: #b7b7b7;
-    font-size: 14px;
+    font-size: clamp(0.6875rem, 0.6223rem + 0.3261vw, 0.875rem);
     font-weight: 700;
     transition: all .5s ease-in-out;
 }
@@ -832,6 +832,9 @@ header {
 .sInput:last-child {
     margin-bottom: 10px;
     margin-top: clamp(0rem, -1.087rem + 5.4348vw, 3.125rem);
+}
+.contactcont .sDesc {
+    margin-bottom: 20px;
 }
 
 
@@ -932,9 +935,7 @@ footer {
     min-width: 280px;
 }
 .fItem-3 {
-    display: flex;
     flex-direction: column;
-    align-items: center;
     background-color: #363636;
     max-height: 200px;
     max-width: 350px;
