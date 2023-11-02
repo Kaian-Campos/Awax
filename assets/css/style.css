@@ -834,7 +834,7 @@ header {
     margin-top: clamp(0rem, -1.087rem + 5.4348vw, 3.125rem);
 }
 .contactcont .sDesc {
-    margin-bottom: 20px;
+    margin-bottom: clamp(0rem, -5.3125rem + 25vw, 2.5rem);
 }
 
 
@@ -995,6 +995,9 @@ footer {
     }
     .fItem-3 {
         order: -1;
+    }
+    #name {
+    margin-top: 0px;
     }
 
 }
