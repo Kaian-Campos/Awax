@@ -176,7 +176,7 @@ header {
 .sDesc {
     font-size: clamp(0.6875rem, 0.6223rem + 0.3261vw, 0.875rem);
     color: #AAA;
-    margin: 8px 20px 40px;
+    margin: 8px 20px clamp(0rem, -5.3125rem + 25vw, 2.5rem);
 }
 .light {
     background-color: #f7f7f7;
@@ -686,26 +686,27 @@ header {
 .sFact {
     flex: 1;
     text-align: center;
-    padding: 15px;
+    padding: 15px clamp(0.9375rem, 2.8906rem + -6.25vw, 1.5625rem) clamp(0rem, -0.3542rem + 1.6667vw, 0.9375rem);
+    min-width: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .sFact h2 {
     color: var(--gold);
-    font-size: 49px;
+    font-size: clamp(2.5rem, 2.2875rem + 1vw, 3.0625rem);
     font-weight: 700;
 
 }
 .sFact h4 {
-    font-size: 18px;
+    font-size: clamp(0.875rem, 0.7806rem + 0.4444vw, 1.125rem);
     text-transform: uppercase;
-    padding: 0px 39px;
+    padding: 0 clamp(0rem, -0.9208rem + 4.3333vw, 2.4375rem);
     margin-bottom: 10px;
     height: 50px;
 }
 .sFact p {
-    font-size: 13px;
+    font-size: clamp(0.625rem, 0.5306rem + 0.4444vw, 0.875rem);
     color: #999;
     line-height: 20px;
 }
@@ -833,10 +834,6 @@ header {
     margin-bottom: 10px;
     margin-top: clamp(0rem, -1.087rem + 5.4348vw, 3.125rem);
 }
-.contactcont .sDesc {
-    margin-bottom: clamp(0rem, -5.3125rem + 25vw, 2.5rem);
-}
-
 
 
 
@@ -998,6 +995,12 @@ footer {
     }
     #name {
     margin-top: 0px;
+    }
+    .sFact:last-child {
+        display: none;
+    }
+    .sFact h4 {
+        height: auto;
     }
 
 }
