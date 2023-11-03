@@ -561,12 +561,12 @@ header {
 }
 .planstitle {
     font-weight: 600;
-    font-size: 14px;
+    font-size: clamp(0.6875rem, 0.2891rem + 1.875vw, 0.875rem);
     color: #2f2f2f;
 }
 .plansprice {
     font-weight: 700;
-    font-size: 30px;
+    font-size: clamp(1.5rem, 0.7031rem + 3.75vw, 1.875rem);
     margin-top: 10px;
 }
 .plansmonth {
@@ -575,7 +575,7 @@ header {
     margin-bottom: 20px;
 }
 .plansdata {
-    font-size: 11px;
+    font-size: clamp(0.5625rem, 0.2969rem + 1.25vw, 0.6875rem);
     font-weight: 700px;
 }
 .plans button {
@@ -583,8 +583,8 @@ header {
     background-color: #373737;
     border: none;
     color: #FFF;
-    padding: 15px 40px;
-    font-size: 12px;
+    padding: clamp(0.5rem, -0.4297rem + 4.375vw, 0.9375rem) clamp(1.0625rem, -1.9922rem + 14.375vw, 2.5rem);
+    font-size: clamp(0.625rem, 0.3594rem + 1.25vw, 0.75rem);
     font-weight: 700;
     text-transform: uppercase;
     margin: 25px 0 5px 0;
@@ -1001,6 +1001,9 @@ footer {
     }
     .sFact h4 {
         height: auto;
+    }
+    .plans:nth-child(3) {
+        display: none;
     }
 
 }
