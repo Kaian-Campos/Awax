@@ -555,9 +555,9 @@ header {
     background-color: #FFF;
     text-align: center;
     width: 255px;
-    padding: 30px;
+    padding: clamp(1.25rem, -0.0781rem + 6.25vw, 1.875rem) 30px clamp(1.5625rem, 0.8984rem + 3.125vw, 1.875rem);
     border-radius: 4px;
-    margin: clamp(0rem, 0.4212rem + -0.5435vw, 0.3125rem);
+    margin: 6px;
 }
 .planstitle {
     font-weight: 600;
@@ -570,7 +570,7 @@ header {
     margin-top: 10px;
 }
 .plansmonth {
-    font-size: 10px;
+    font-size: clamp(0.5625rem, 0.4297rem + 0.625vw, 0.625rem);
     color: #979797;
     margin-bottom: 20px;
 }
@@ -1004,6 +1004,9 @@ footer {
     }
     .plans:nth-child(3) {
         display: none;
+    }
+    .plans:nth-child(1) {
+        margin-top: clamp(0rem, 4.1016rem + -13.125vw, 1.3125rem);
     }
 
 }
