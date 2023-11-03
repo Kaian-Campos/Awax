@@ -289,6 +289,7 @@ header {
     border-radius: 25px;
     display: inline-block;
     padding: 0 clamp(0.3125rem, -0.231rem + 2.7174vw, 1.875rem);
+    margin-top: clamp(0rem, 5.8594rem + -18.75vw, 1.875rem);
 }
 .sProjects-filters ul, li {
     list-style: none;
@@ -328,7 +329,7 @@ header {
     justify-content: center;
     width: 100vw;
     max-width: fit-content;
-    margin-top: 20px;
+    margin-top: clamp(0.625rem, -0.7031rem + 6.25vw, 1.25rem);
     
 }
 .sProjects-photo {
@@ -467,7 +468,7 @@ header {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-top: clamp(0rem, -0.6522rem + 3.2609vw, 1.875rem);
+    margin-top: 30px;
 }
 .clientsimg1 {
     width: clamp(7.1875rem, 6.4266rem + 3.8043vw, 9.375rem);
@@ -524,9 +525,9 @@ header {
     display: flex;
     justify-content: center;
     background-color: #FFF;
-    border-top: 3px solid #d7d7d7;
-    border-bottom: 3px solid #d7d7d7;
-    padding: 45px 0;
+    border-top: clamp(0.0625rem, -0.0556rem + 0.5556vw, 0.1875rem) solid #d7d7d7;
+    border-bottom: clamp(0.0625rem, -0.0556rem + 0.5556vw, 0.1875rem) solid #d7d7d7;
+    padding: clamp(1.25rem, -2.0703rem + 15.625vw, 2.8125rem) 0;
 }
 .mark {
     width: 100%;
@@ -985,6 +986,12 @@ footer {
     .projectsimg {
         display: none;
     }
+    .mark img:nth-child(1) {
+        display: none;
+    }
+    .mark img:nth-child(2) {
+        display: none;
+    }
 }
 @media (max-width:500px) {
     .fItem-1 {
@@ -1007,6 +1014,13 @@ footer {
     }
     .plans:nth-child(1) {
         margin-top: clamp(0rem, 4.1016rem + -13.125vw, 1.3125rem);
+    }
+    .mark img:nth-child(6) {
+        display: none;
+    }
+    .mark img {
+        width: 90px;
+        height: 45px;
     }
 
 }
@@ -1048,5 +1062,10 @@ footer {
         height: 12px;
         width: 12px;
     }
-
+    .mark img:nth-child(5) {
+        display: none;
+    }
+    .mark {
+        justify-content: space-evenly;
+    }
 }
