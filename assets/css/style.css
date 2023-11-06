@@ -241,34 +241,41 @@ header {
 }
 
 
+
+
+
+
+
 .sServices {
     display: flex;
     flex-wrap: wrap;
 }
 .sServices img {
-    width: 60px;
-    height: 60px;
+    width: clamp(3rem, 2.7167rem + 1.3333vw, 3.75rem);
+    height: clamp(3rem, 2.7167rem + 1.3333vw, 3.75rem);
 }
 .sService {
     flex: 1;
     text-align: center;
     border-right: clamp(0rem, -47.375rem + 100vw, 0.125rem) solid #333;
-    padding: 20px;
+    padding: clamp(1rem, 0.7976rem + 0.9524vw, 1.25rem) clamp(1.25rem, 5.7738rem + -9.5238vw, 3.75rem);
 }
 .sService:first-child {
     border-left: clamp(0rem, -47.375rem + 100vw, 0.125rem) solid #333;
+    margin-top: clamp(0rem, 3.9063rem + -12.5vw, 1.25rem);
 }
 .sService h4 {
-    margin-top: 30px;
-    font-size: 18px;
+    margin-top: clamp(0.625rem, -0.3869rem + 4.7619vw, 1.875rem);
+    font-size: clamp(0.875rem, 0.7806rem + 0.4444vw, 1.125rem);
     text-transform: uppercase;
     padding: 0px 30px;
 }
 .sService p {
-    margin-top: 5px;
-    font-size: 13px;
+    margin-top: clamp(0rem, -0.253rem + 1.1905vw, 0.3125rem);
+    font-size: clamp(0.625rem, 0.5542rem + 0.3333vw, 0.8125rem);
     color: #999;
     line-height: 20px;
+    word-wrap: break-word;
 }
 
 
@@ -681,7 +688,7 @@ header {
     justify-content: center;
 }
 .sPbutton button {
-    margin-top: clamp(1.125rem, 0.8417rem + 1.3333vw, 1.875rem);
+    margin-top: clamp(1.125rem, 0.7236rem + 1.8889vw, 2.1875rem);
 }
 
 
