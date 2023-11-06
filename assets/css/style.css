@@ -623,7 +623,7 @@ header {
 .premium-feature {
     display: flex;
     margin-bottom: 20px;
-    width:500px ;
+    max-width: 500px;
 }
 .premium-feature span {
     font-weight: 700;
@@ -642,7 +642,12 @@ header {
 }
 .premium-books {
     align-self: baseline;
-    margin-right: 70px;
+    margin-right: clamp(0rem, -7.9545rem + 15.9091vw, 4.375rem);
+    margin-left: 20px;
+    margin-top: clamp(0rem, 6.8359rem + -21.875vw, 2.1875rem);
+}
+.premium-books img {
+    height: clamp(13.4375rem, 10.4625rem + 14vw, 21.3125rem);
 }
 .premium-desc p:nth-child(3) {
     margin-top: 5px;
