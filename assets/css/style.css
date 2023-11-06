@@ -607,15 +607,15 @@ header {
 
 .whiter {
     background-color: #FFF;
-    border-top: 2px solid #d7d7d7;
+    border-top: clamp(0.0625rem, 0.0119rem + 0.2381vw, 0.125rem) solid #d7d7d7;
 }
 .sPremium {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    border-bottom: 3px solid #eee;
-    padding-bottom: 30px;
+    border-bottom: clamp(0.0625rem, -0.0387rem + 0.4762vw, 0.1875rem) solid #eee;
+    padding-bottom: clamp(0rem, -0.4722rem + 2.2222vw, 1.25rem);
 }
 .premium-features {
     margin-top: 20px;
@@ -624,21 +624,26 @@ header {
     display: flex;
     margin-bottom: 20px;
     max-width: 500px;
+    padding: 0 clamp(0rem, 3.3929rem + -7.1429vw, 1.875rem);
 }
 .premium-feature span {
     font-weight: 700;
-    font-size: 22px;
+    font-size: clamp(1.0625rem, 0.9444rem + 0.5556vw, 1.375rem);
     text-transform: uppercase;
     color: #242424;
-    line-height: 30px;
+    line-height: clamp(1.5625rem, 1.4444rem + 0.5556vw, 1.875rem);
 }
 .premium-feature p {
-    font-size: 14px;
-    line-height: 25px;
+    font-size: clamp(0.6875rem, 0.6167rem + 0.3333vw, 0.875rem);
+    line-height: clamp(1.25rem, 1.1319rem + 0.5556vw, 1.5625rem);
     color: #9e9e9e;
+    
 }
 .premium-check {
-    margin-right: 30px;
+    margin-right: clamp(0.75rem, 0.325rem + 2vw, 1.875rem);
+}
+.premium-check img {
+    height: clamp(1.5rem, 1.3583rem + 0.6667vw, 1.875rem);
 }
 .premium-books {
     align-self: baseline;
@@ -653,7 +658,7 @@ header {
     margin-top: 5px;
 }
 .sP .sliderpointer {
-    margin-top: 40px;
+    margin-top: clamp(0.9375rem, 0.3472rem + 2.7778vw, 2.5rem);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -674,7 +679,9 @@ header {
 .sPbutton {
     display: flex;
     justify-content: center;
-    margin-top: 5px;
+}
+.sPbutton button {
+    margin-top: clamp(1.125rem, 0.8417rem + 1.3333vw, 1.875rem);
 }
 
 
