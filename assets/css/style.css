@@ -413,8 +413,11 @@ header {
     color: #000;
     border-radius: 4px;
 }
+.worker .img {
+    width: clamp(9.25rem, 8.4rem + 4vw, 11.5rem);
+}
 .workertitle {
-    font-size: 21px;
+    font-size: clamp(1rem, 0.8819rem + 0.5556vw, 1.3125rem);
     text-transform: uppercase;
     font-weight: 600;
     margin-top: 40px;
@@ -423,7 +426,7 @@ header {
 .workerdesc {
     color: #333;
     margin-top: 5px;
-    font-size: 14px;
+    font-size: clamp(0.6875rem, 0.6167rem + 0.3333vw, 0.875rem);
 }
 .worker-social {
     display: flex;
@@ -439,6 +442,9 @@ header {
     border-radius: 18px;
     margin: 0 3px;
     transition: .3s all ease;
+}
+.worker-social img {
+    object-fit: contain;
 }
 .worker-social a:hover {
     transform: scale(1.2);
@@ -1086,5 +1092,13 @@ footer {
     }
     .mark {
         justify-content: space-evenly;
+    }
+    .worker-social a {
+        height: 27px;
+        width: 27px;
+    }
+    .worker-social img {
+        height: 12px;
+        width: 12px;
     }
 }
