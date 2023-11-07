@@ -407,11 +407,11 @@ header {
     display: flex;
     flex-direction: column;
     background-color: #FFF;
+    height: clamp(21.875rem, 17.3214rem + 21.4286vw, 27.5rem);
     width: 350px;
-    height: 440px;
-    margin: clamp(0rem, 0.4212rem + -0.5435vw, 0.3125rem) 15px;
+    margin: clamp(0rem, 3.0139rem + -3.8889vw, 2.1875rem) clamp(0.9375rem, 1.7986rem + -1.1111vw, 1.5625rem) 0;
     color: #000;
-    border-radius: 4px;
+    border-radius: clamp(0.125rem, 0.0778rem + 0.2222vw, 0.25rem);
 }
 .worker .img {
     width: clamp(9.25rem, 8.4rem + 4vw, 11.5rem);
@@ -420,7 +420,7 @@ header {
     font-size: clamp(1rem, 0.8819rem + 0.5556vw, 1.3125rem);
     text-transform: uppercase;
     font-weight: 600;
-    margin-top: 40px;
+    margin-top: clamp(2.0625rem, 1.8972rem + 0.7778vw, 2.5rem);
     color: #333;
 }
 .workerdesc {
@@ -430,7 +430,7 @@ header {
 }
 .worker-social {
     display: flex;
-    margin-top: 35px;
+    margin-top: clamp(1.75rem, 1.5847rem + 0.7778vw, 2.1875rem);
 }
 .worker-social a {
     background-color: #BBB;
@@ -451,7 +451,7 @@ header {
     background-color: var(--gold);
 }
 .sTeam .sliderpointer {
-    margin-top: 50px;
+    margin-top: clamp(2.1875rem, 1.8333rem + 1.6667vw, 3.125rem);
     display: flex;
     justify-content: center;
     align-items: center;
