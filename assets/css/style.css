@@ -1008,7 +1008,40 @@ footer {
 
 
 
-@media (max-width:760px) {
+@media (max-width:770px) {
+    header {
+        height: 70px;
+    }
+    .banner {
+        height: calc(100vh - 70px);
+    }
+    nav {
+        position: absolute;
+        z-index: 10;
+        background-color: rgba(0, 0, 0, 0.7);
+        width: 65vw;
+        height: calc(100vh - 70px);
+        top: 70px;
+        right: 0;
+    }
+    .menu ul {
+        flex-direction: column;
+    }
+    .menu li a {
+        padding: 10px 0;
+        height: auto;
+        font-size: 11px;
+        font-weight: 700;
+        border-bottom: 0;
+    }
+    .menu li a:hover {
+        color: var(--gold);
+        border-bottom: 0;
+    }
+
+
+
+
 
     .worker:nth-child(1) {
         display: none;
@@ -1016,15 +1049,27 @@ footer {
     .worker:nth-child(3) {
         display: none;
     }
+
+
+
+
     .projectsimg {
         display: none;
     }
+
+
+
+
     .mark img:nth-child(1) {
         display: none;
     }
     .mark img:nth-child(2) {
         display: none;
     }
+
+
+
+
     .sAboutus {
         flex-direction: column;
         align-items: center;
@@ -1043,18 +1088,31 @@ footer {
     #name {
     margin-top: 0px;
     }
+
+
+
+
+
     .sFact:last-child {
         display: none;
     }
     .sFact h4 {
         height: auto;
     }
+
+
+
+
     .plans:nth-child(3) {
         display: none;
     }
     .plans:nth-child(1) {
         margin-top: clamp(0rem, 4.1016rem + -13.125vw, 1.3125rem);
     }
+
+
+
+
     .mark img:nth-child(6) {
         display: none;
     }
@@ -1102,12 +1160,22 @@ footer {
         height: 12px;
         width: 12px;
     }
+
+
+
+
+
     .mark img:nth-child(5) {
         display: none;
     }
     .mark {
         justify-content: space-evenly;
     }
+
+
+
+
+
     .worker-social a {
         height: 27px;
         width: 27px;
