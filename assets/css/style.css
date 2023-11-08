@@ -38,6 +38,9 @@ header {
     background-color: var(--gold);
     border-radius: 50px;
 }
+nav {
+    display: block;
+}
 .menu {
     display: flex;
     align-items: center;
@@ -1013,7 +1016,7 @@ footer {
 
 @media (max-width:770px) {
     header {
-        height: 70px;
+        height: 72px;
     }
     .banner {
         height: calc(100vh - 70px);
@@ -1023,7 +1026,7 @@ footer {
         position: absolute;
         z-index: 10;
         background-color: rgba(0, 0, 0, 0.8);
-        width: 65vw;
+        width: 45vw;
         height: calc(100vh - 70px);
         top: 70px;
         right: 0;
@@ -1032,13 +1035,13 @@ footer {
         flex-direction: column;
     }
     .menu ul {
-        margin: 15px 0 0 35px;
+        margin: 20px 0 0 40px;
     }
     .menu li a {
-        padding: 10px 0;
+        padding: 12px 0;
         height: auto;
-        font-size: 11px;
-        font-weight: 700;
+        font-size: 17px;
+        font-weight: 600;
         border-bottom: 0;
     }
     .menu li a:hover {
@@ -1046,6 +1049,7 @@ footer {
         border-bottom: 0;
     }
     .menu-opener {
+        width: 30px;
         display: block;
         margin-right: 20px;
     }
@@ -1089,7 +1093,40 @@ footer {
         text-align: center;
     }
 }
+
+
+
+
+
+
 @media (max-width:500px) {
+    header {
+        height: 70px;
+    }
+    nav {
+        width: 50vw;
+    }
+    .menu ul {
+        margin: clamp(0.9375rem, -0.8333rem + 8.3333vw, 1.25rem) 0 0 clamp(2.1875rem, 0.4167rem + 8.3333vw, 2.5rem);
+    }
+    .menu li a {
+        padding: 10px 0;
+        font-size: clamp(0.6875rem, -0.0208rem + 3.3333vw, 0.8125rem);
+        font-weight: 700;
+        border-bottom: 0;
+    }
+    .menu li a:hover {
+        color: var(--gold);
+        border-bottom: 0;
+    }
+    .menu-opener {
+        width: 25px;
+    }
+
+
+
+
+
     .fItem-1 {
         justify-content: center;
     }
@@ -1133,6 +1170,12 @@ footer {
     }
 
 }
+
+
+
+
+
+
 @media (max-width:400px) {
     .tellabout {
         padding-top: 10px;
@@ -1194,5 +1237,10 @@ footer {
     .worker-social img {
         height: 12px;
         width: 12px;
+    }
+}
+@media (max-width:340px) {
+    nav {
+        width: 65vw;
     }
 }
