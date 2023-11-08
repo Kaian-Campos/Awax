@@ -10,12 +10,24 @@
     <title>Awax</title>
 </head>
 <body>
+    <script>
+        window.onload = function(){
+            document.querySelector(".menu-opener").addEventListener("click", function(){
+                if(document.querySelector("nav").style.display == 'flex') {
+                    document.querySelector("nav").style.display = 'none';
+                } else {
+                    document.querySelector("nav").style.display = 'flex';
+                }
+            });
+        };
+    </script>
     <header>
         <div class="container">
             <div class="logo">
                 <a href=""><div class="logoimg"></div></a>
             </div>
             <div class="menu">
+                <img class="menu-opener" src="assets/images/menu.png" alt="">
                 <nav>
                     <ul>
                         <li><a href="">Home</a></li>
